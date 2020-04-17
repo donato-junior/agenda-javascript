@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Agenda</h1>
+
+      <div class="input">
+        <div class="input-wrap">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Ex: Cristiano Martins"
+            autofocus
+          />
+        </div>
+        <div class="input-wrap">
+          <label for="end">Endereço</label>
+          <input type="text" id="end" placeholder="Ex: Rua Tal" />
+        </div>
+        <div class="input-wrap">
+          <label for="tel">Telefone</label>
+          <input type="text" id="tel" placeholder="Ex: 012345678" />
+        </div>
+        <div class="input-wrap">
+          <label for="mail">E-mail</label>
+          <input type="email" id="mail" placeholder="Ex: person@email.com" />
+        </div>
+      </div>
+
+      <div class="buttons-wrap">
+        <button onclick="defineNewPerson()">Inserir 📎</button>
+        <button onclick="editPerson()">Editar 📝</button>
+        <button onclick="orderPerson()">Ordenar 🧹</button>
+        <button onclick="render()">Mostrar 👀</button>
+        <button onclick="searchPerson()">Consultar 🔍</button>
+        <button onclick="removePerson()">Remover ✖</button>
+        <button onclick="deleteAll()">Apagar todos 💀</button>
+      </div>
+
+      <ul class="result-bg">
+        Agenda vazia!
+      </ul>
+    </main>
+  </body>
+</html>
+
+<!-- 10. Crie uma agenda usando array que contenha nome, endereço, telefone, email (cada elemento do array será um objeto com os dados sugeridos).
+Crie as operações (botões):
+- Inserir
+- Editar
+- Ordenar
+- Mostrar
+- Consultar
+- Remover -->
